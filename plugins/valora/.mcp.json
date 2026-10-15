@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "valora": {
+      "type": "http",
+      "url": "https://mcp-valora.archicode.tech/mcp"
+    }
+  }
+}
