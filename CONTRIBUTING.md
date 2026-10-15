@@ -30,6 +30,6 @@ scripts/build-zips.sh             gera os .zip das skills para o chat do Claude
 
 1. Suba a `version` no `plugin.json` e na entrada do `marketplace.json`.
 2. Rode `scripts/build-zips.sh` e confira os arquivos em `dist/`.
-3. Crie uma tag `vX.Y.Z`. O workflow anexa os `.zip` à versão no GitHub.
+3. Publique uma versão (release) `vX.Y.Z` no GitHub. O workflow gera os `.zip` e anexa à versão.
 
 Quem instalou pelo marketplace recebe a atualização ao clicar em **Atualizar**. Quem usa o chat precisa enviar o `.zip` novo.
