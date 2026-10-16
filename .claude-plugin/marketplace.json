@@ -13,7 +13,7 @@
       "name": "valora",
       "source": "./plugins/valora",
       "description": "Avaliação de imóveis pelo Claude: parecer de valor do corretor e laudo NBR 14653 do engenheiro ou arquiteto, com a sua conta Valora.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": { "name": "Archicode", "url": "https://archicode.com.br" },
       "homepage": "https://archicode.com.br/valora",
       "category": "productivity",
