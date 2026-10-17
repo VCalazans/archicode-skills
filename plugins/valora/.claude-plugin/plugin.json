@@ -1,6 +1,6 @@
 {
   "name": "valora",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Avaliação de imóveis pelo Claude com o Valora: pesquisa de comparáveis, parecer de valor do corretor (tratamento por fatores) e laudo NBR 14653 do engenheiro ou arquiteto (regressão). Usa a sua conta e os seus créditos do Valora.",
   "author": { "name": "Archicode", "url": "https://archicode.com.br" },
   "homepage": "https://archicode.com.br/valora",

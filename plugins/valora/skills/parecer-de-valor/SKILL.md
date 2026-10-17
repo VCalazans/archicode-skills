@@ -22,7 +22,7 @@ Pergunte a finalidade se ela não estiver clara. O parecer é uma opinião de va
 
 | Tool | Custo |
 |---|---|
-| `valora-pesquisa-mercado` | 10 créditos (busca vazia não cobra) |
+| `valora-pesquisa-mercado` | 10 créditos, cobrados no fim e só se trouxer anúncios |
 | `valora-pesquisa-profunda` | 25 créditos, só se a normal não bastar |
 | `valora-calcular-fatores` | 5 créditos |
 | Demais tools deste roteiro, inclusive gerar o documento | grátis |
@@ -31,7 +31,7 @@ Pergunte a finalidade se ela não estiver clara. O parecer é uma opinião de va
 
 1. **Achar ou criar a avaliação.** Use `valora-listar-avaliacoes` para ver se o imóvel já existe. Se não existir, reúna tipo, área, endereço (bairro, cidade/UF) e finalidade, mostre o resumo e, com o "sim", chame `valora-criar-avaliacao` com o método **fatores**.
 2. **Procurar no banco primeiro (grátis).** `valora-buscar-amostras` na região. Se já houver comparáveis bons, vincule com `valora-vincular-amostras` depois de mostrar quais.
-3. **Pesquisar o mercado, se faltar amostra.** Diga que custa 10 créditos e pode levar até 3 minutos. Com o "sim", chame `valora-pesquisa-mercado` passando o `avaliacaoId`, assim a busca usa os dados do imóvel e ordena do mais perto ao mais longe.
+3. **Pesquisar o mercado, se faltar amostra.** Diga que custa 10 créditos (cobrados no fim, só se trouxer anúncios) e pode levar até 3 minutos. Com o "sim", chame `valora-pesquisa-mercado` passando o `avaliacaoId`, assim a busca usa os dados do imóvel e ordena do mais perto ao mais longe. Se voltar com `tarefaId`, diga a etapa ao usuário e chame `valora-acompanhar-tarefa` até terminar; não repita a pesquisa. Mais anúncios da mesma pesquisa: `valora-ver-anuncios` (grátis).
 4. **Mostrar e deixar escolher.** Apresente uma tabela com o número (`n`), local, área, preço, valor por m² e distância. Aponte anúncios estranhos (área muito diferente, preço fora da curva, outro tipo de imóvel), mas a decisão é do usuário. Sugira de 6 a 10 comparáveis parecidos.
 5. **Guardar os escolhidos (grátis).** `valora-guardar-anuncios` com o `pesquisaId` e os números escolhidos. Não copie os objetos dos anúncios.
 6. **Calcular por fatores.** Diga que custa 5 créditos. Com o "sim", chame `valora-calcular-fatores`. Explique o resultado em linguagem de corretor: valor por m², valor total, **faixa de negociação**, amostras que saíram do cálculo e o motivo. Repita o aviso de parecer x laudo que vem no resultado.
